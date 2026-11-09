@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jaiz Bank Plc Public Offer – Share Subscription</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#012446;--navy2:#053b72;--blue:#0157ad;--gold:#f5b400;--gold2:#ffd04d;--bg:#f4f7fb;--ink:#0f1b2d;--soft:#5b6b80;--line:#dbe3ee;--err:#c62f2f;--ok:#0d7a47;--r:14px;--sh:0 10px 40px rgba(1,36,70,.12)}
+*{box-sizing:border-box;margin:0}body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+h1,h2,h3,.sora{font-family:'Sora','DM Sans',sans-serif}a{color:inherit}.hidden{display:none!important}
+.wrap{max-width:1160px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 1px 0 var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}header img{height:42px}
+nav{display:flex;gap:26px}nav a{text-decoration:none;font-weight:700;font-size:14px;padding:6px 0;border-bottom:3px solid transparent;cursor:pointer}nav a:hover,nav a.on{border-color:var(--gold)}
+.btn{border:0;border-radius:999px;padding:13px 26px;font:700 15px 'DM Sans';cursor:pointer;transition:.2s;display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+.btn:hover{transform:translateY(-2px)}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.b-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:var(--navy);box-shadow:0 8px 22px rgba(245,180,0,.35)}
+.b-navy{background:var(--navy);color:#fff}.b-out{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+.hero{position:relative;color:#fff;background:radial-gradient(1000px 500px at 85% 20%,#0b5fb3 0,transparent 60%),linear-gradient(135deg,var(--navy),var(--navy2));overflow:hidden}
+.hero:after{content:"";position:absolute;right:-120px;top:-160px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(245,180,0,.28),transparent 65%)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;padding-top:56px;padding-bottom:70px;align-items:center}
+.tag{display:inline-block;background:var(--gold);color:var(--navy);font-weight:800;font-size:13px;letter-spacing:.08em;padding:8px 18px;border-radius:999px;text-transform:uppercase}
+.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.08;margin:20px 0 14px;font-weight:800}.hero h1 span{color:var(--gold)}
+.hero p.sub{font-size:19px;opacity:.9;max-width:520px}
+.stats{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}.stat{border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);backdrop-filter:blur(6px);border-radius:14px;padding:14px 18px;min-width:130px;text-align:center}
+.stat b{display:block;font:800 21px Sora}.stat small{font-size:12px;opacity:.85}
+.hero .acts{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.hero .acts a.l{font-weight:700;color:#fff}
+.qa{background:#fff;color:var(--ink);border-radius:22px;padding:28px;box-shadow:var(--sh)}.qa h3{font-size:22px}.qa p{color:var(--soft);font-size:14px;margin-bottom:18px}.qa .btn{width:100%;justify-content:center;margin-top:10px}
+.skyline{position:absolute;left:0;right:0;bottom:0;height:90px;opacity:.12;z-index:1}
+.trust{background:#fff;border-bottom:1px solid var(--line)}.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:22px 20px}
+.trust div{display:flex;gap:12px;align-items:center;font-weight:700;font-size:14px}.trust i{font-style:normal;width:42px;height:42px;border-radius:12px;background:#eaf2fc;display:grid;place-items:center;font-size:20px}
+.grid2{display:grid;grid-template-columns:1.1fr 1fr;gap:26px;padding:44px 20px}
+.card{background:#fff;border-radius:var(--r);padding:28px;box-shadow:var(--sh)}.card h2{font-size:24px;margin-bottom:10px;color:var(--navy)}
+.card p{color:var(--soft)}.faq{border:1px solid var(--line);border-radius:12px;margin-top:10px;overflow:hidden}
+.faq button{all:unset;box-sizing:border-box;width:100%;padding:15px 18px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between}
+.faq div{max-height:0;overflow:hidden;transition:.3s;padding:0 18px;color:var(--soft);font-size:14px}.faq.open div{max-height:200px;padding-bottom:14px}.faq.open button span{transform:rotate(45deg)}
+.how{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:22px;padding:32px;margin:0 auto 50px;display:grid;grid-template-columns:1fr 3fr;gap:24px;align-items:center}
+.how .st{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.how .n{width:38px;height:38px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-weight:800;margin-bottom:8px}.how small{opacity:.85}
+footer{background:var(--navy);color:#cfe0f5;font-size:13px;padding:26px 0}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}footer a{margin-right:16px;cursor:pointer}
+/* form */
+.page{padding:34px 20px 60px;max-width:900px;margin:auto}
+.stepper{display:flex;align-items:center;margin-bottom:24px}.stp{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--soft)}
+.stp b{width:34px;height:34px;border-radius:50%;background:#fff;border:2px solid var(--line);display:grid;place-items:center}.stp.on,.stp.done{color:var(--navy)}.stp.on b{background:var(--gold);border-color:var(--gold)}.stp.done b{background:var(--navy);color:#fff;border-color:var(--navy)}
+.line{flex:1;height:3px;background:var(--line);margin:0 10px;border-radius:3px}.line.done{background:var(--navy)}
+.sec{margin-top:26px;padding-top:24px;border-top:1px dashed var(--line);animation:up .35s}@keyframes up{from{opacity:0;transform:translateY(10px)}}
+.st-t{font:700 17px Sora;color:var(--navy);margin-bottom:14px;display:flex;gap:10px;align-items:center}.st-t:before{content:"";width:6px;height:22px;background:var(--gold);border-radius:3px}
+.req{color:var(--err)}.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}.span2{grid-column:span 2}
+label.l{display:block;font-weight:700;font-size:13px;margin-bottom:6px}
+input,select{width:100%;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;font:500 15px 'DM Sans';background:#fff;color:var(--ink);transition:.2s}
+input:focus,select:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 4px rgba(1,87,173,.12)}input[readonly]{background:#eef3f9;color:var(--soft)}
+input.bad{border-color:var(--err)}.fe{color:var(--err);font-size:12px;margin-top:4px;min-height:0}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.opt{border:2px solid var(--line);border-radius:12px;padding:16px;cursor:pointer;display:flex;gap:12px;align-items:center;transition:.2s;background:#fff}.opt:hover{border-color:var(--blue)}
+.opt.sel{border-color:var(--navy);background:#eef5fd;box-shadow:inset 0 0 0 1px var(--navy)}.opt span{font-size:26px}.opt small{display:block;color:var(--soft);font-size:12px}
+.vbox{background:#f3f8ff;border:1.5px solid #bcd6f3;border-radius:12px;padding:18px}.vrow{display:grid;grid-template-columns:1fr 1fr auto;gap:12px;margin-top:10px}
+.msg{margin-top:12px;padding:12px 14px;border-radius:10px;font-size:14px;font-weight:500}.msg.ok{background:#e6f6ee;color:#0b5e37}.msg.er{background:#fdecec;color:var(--err)}.msg.in{background:#fff7dd;color:#7a5a00}
+.calc{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:14px;padding:22px;margin-top:14px;text-align:center}.calc b{font:800 34px Sora;color:var(--gold2);display:block}
+.calc small{opacity:.85}.brk{display:flex;justify-content:space-between;max-width:320px;margin:0 auto 8px;font-size:14px}
+.acts2{display:flex;justify-content:space-between;gap:12px;margin-top:30px;flex-wrap:wrap}
+table.rv{width:100%;border-collapse:collapse}.rv td{padding:11px 4px;border-bottom:1px solid var(--line);font-size:14px}.rv td:first-child{font-weight:700;color:var(--soft);width:42%}.rv tr.tot td{font:800 20px Sora;color:var(--navy)}
+.chk{display:flex;gap:12px;padding:14px;border:1.5px solid var(--line);border-radius:12px;cursor:pointer;margin-top:10px;font-size:14px}.chk i{flex:none;width:22px;height:22px;border:2px solid var(--line);border-radius:6px;display:grid;place-items:center;color:#fff;font-style:normal;font-size:13px}.chk.on{border-color:var(--navy);background:#eef5fd}.chk.on i{background:var(--navy);border-color:var(--navy)}
+.pay{text-align:center}.pamt{font:800 44px Sora;color:var(--navy)}.pbtn{background:#09a5db;color:#fff;border:0;border-radius:12px;padding:16px 34px;font:800 17px 'DM Sans';cursor:pointer;margin-top:14px;box-shadow:0 8px 22px rgba(9,165,219,.35)}.pbtn:hover{filter:brightness(1.07)}
+/* receipt */
+.ic{width:1em;height:1em;fill:currentColor;vertical-align:-.14em}.trust i .ic{width:22px;height:22px;color:var(--navy)}.opt span .ic{width:28px;height:28px;color:var(--blue)}
+.lg{background:#fff;border-radius:10px;padding:6px 12px;display:inline-block}.lg img{height:30px;display:block}
+.rwrap{max-width:794px;margin:auto}
+.rcp{background:#fff;border-radius:10px;box-shadow:var(--sh);overflow:hidden;position:relative;font-size:13px}
+.rcp:before{content:"";position:absolute;right:-60px;bottom:-60px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(245,180,0,.13),transparent 70%);pointer-events:none}
+.rtop{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;border-bottom:4px solid var(--gold)}.rtop img{height:44px}
+.rtop .rt{text-align:right}.rtop .rt b{font:800 15px Sora;color:var(--navy);letter-spacing:.06em;display:block}.rtop .rt small{color:var(--soft);font-size:11px}
+.rband{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;display:flex;justify-content:space-between;align-items:center;padding:14px 24px;gap:12px}
+.rband small{opacity:.8;font-size:11px;text-transform:uppercase;letter-spacing:.08em;display:block}.rband b{font:800 24px Sora;color:var(--gold2)}
+.badge{background:#e6f6ee;color:#0b5e37;font-weight:700;font-size:12px;padding:6px 14px;border-radius:999px;display:inline-flex;gap:6px;align-items:center}
+.rg{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;padding:16px 24px 6px}
+.rg h4{grid-column:span 2;font:700 11px Sora;text-transform:uppercase;letter-spacing:.1em;color:var(--blue);margin:12px 0 2px;display:flex;align-items:center;gap:10px}.rg h4:after{content:"";flex:1;height:1px;background:var(--line)}
+.rr{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid #eef2f7}.rr span{color:var(--soft)}.rr b{text-align:right;word-break:break-word}
+.rfoot{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:12px 24px;background:#f4f7fb;border-top:1px solid var(--line);font-size:11px;color:var(--soft)}.rfoot b{color:var(--navy);font:700 12px Sora}
+.rnote{padding:0 24px 14px;font-size:11px;color:var(--soft)}
+.tc h3{margin:22px 0 8px;color:var(--navy)}.tc li{margin:5px 0 5px 20px;color:var(--soft)}.tc p{color:var(--soft)}
+#toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(100px);background:var(--navy);color:#fff;padding:13px 22px;border-radius:12px;transition:.3s;z-index:99}#toast.show{transform:translateX(-50%)}
+@media(max-width:860px){.hero .wrap,.grid2,.how{grid-template-columns:1fr}.trust .wrap,.how .st{grid-template-columns:1fr 1fr}nav{display:none}.cols,.vrow{grid-template-columns:1fr}.span2{grid-column:auto}}
+@page{size:A4;margin:10mm}@media print{header,footer,.noprint{display:none!important}body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}.page{padding:0}.rcp{box-shadow:none;border:1px solid var(--line)}}
+</style></head><body><svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="i-lock" viewBox="0 0 24 24"><path d="M6 10V8a6 6 0 1112 0v2h1a1 1 0 011 1v9a1 1 0 01-1 1H5a1 1 0 01-1-1v-9a1 1 0 011-1zm2 0h8V8a4 4 0 10-8 0zm4 4a1.5 1.5 0 00-.7 2.8V19h1.4v-2.2A1.5 1.5 0 0012 14z"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 2h8l6 6v13a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1zm7 1.5V9h5.5zM8 13h8v1.6H8zm0 3.5h8V18H8z"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.4 9.3-8 11-4.6-1.7-8-6-8-11V5zm-1.2 13.4l6-6-1.4-1.4-4.6 4.6-2-2L7.4 12z"/></symbol>
+<symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6z"/></symbol>
+<symbol id="i-pad" viewBox="0 0 24 24"><path d="M12 2a5 5 0 00-5 5v3H6a1 1 0 00-1 1v10a1 1 0 001 1h12a1 1 0 001-1V11a1 1 0 00-1-1h-1V7a5 5 0 00-5-5zm-3 8V7a3 3 0 016 0v3zm3 4a2 2 0 011 3.7V20h-2v-2.3A2 2 0 0112 14z"/></symbol>
+<symbol id="i-head" viewBox="0 0 24 24"><path d="M12 3a9 9 0 00-9 9v6a3 3 0 003 3h1a1 1 0 001-1v-7a1 1 0 00-1-1H5v-1a7 7 0 0114 0v1h-2a1 1 0 00-1 1v7a1 1 0 001 1h1v1h-6v2h6a3 3 0 003-3v-9a9 9 0 00-9-9z"/></symbol>
+<symbol id="i-bank" viewBox="0 0 24 24"><path d="M12 2l10 5v2H2V7zM4 11h3v7H4zm6.5 0h3v7h-3zM17 11h3v7h-3zM2 20h20v2H2z"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><path d="M12 12a5 5 0 100-10 5 5 0 000 10zm0 2c-5 0-9 2.5-9 6v2h18v-2c0-3.5-4-6-9-6z"/></symbol>
+<symbol id="i-card" viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm1 4v2h16V9zm2 6v2h5v-2z"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-2 6l7 4-7 4z"/></symbol>
+<symbol id="i-print" viewBox="0 0 24 24"><path d="M7 3h10v4H7zM5 8h14a2 2 0 012 2v6h-4v4H7v-4H3v-6a2 2 0 012-2zm4 7v4h6v-4z"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1.5 14.5L6 12l1.4-1.4 3.1 3.1 6.1-6.1L18 9z"/></symbol>
+</defs></svg>
+<header><div class="wrap"><a href="#/"><img src="images/jaiz.png" alt="Jaiz Bank"></a>
+<nav><a href="#/" class="on">Home</a><a onclick="go('about')">About IPO</a><a onclick="go('how')">How It Works</a><a onclick="go('faqs')">FAQs</a><a href="#/terms">Terms</a></nav>
+<a class="btn b-navy" href="#/apply" style="padding:10px 20px">Start Subscription</a></div></header>
+
+<main id="v-home">
+<section class="hero"><svg class="skyline" viewBox="0 0 1200 90" preserveAspectRatio="none"><path fill="#fff" d="M0 90V60h60V30h14v30h40V40h20V20h10v20h30v50h60V50h30V10h12v40h40v40h70V55h50V25h12v30h60v35h80V45h40V15h12v30h50v45h90V60h40V35h14v25h70v30z"/></svg>
+<div class="wrap"><div>
+<span class="tag">Public Offer 2025</span>
+<h1>Jaiz Bank Plc<br><span>Share Subscription</span></h1>
+<p class="sub">Secure your shares online — review everything before you pay.</p>
+<div class="stats"><div class="stat"><b>₦1,000.00</b><small>Offer price per unit</small></div><div class="stat"><b>100</b><small>Minimum units</small></div><div class="stat"><b>2,000,000</b><small>Maximum units</small></div><div class="stat"><b>100</b><small>Units in multiples of</small></div></div>
+<div class="acts"><a class="btn b-gold" href="#/apply">Start Subscription →</a><a class="l" href="#" onclick="go('about');return false"><svg class="ic "><use href="#i-play"/></svg> Learn More</a></div></div>
+<div class="qa"><h3><svg class="ic "><use href="#i-pad"/></svg> Quick Access</h3><p>Already started your application?</p><button class="btn b-navy" onclick="resume()">Continue Application</button><button class="btn b-out" onclick="location.hash='#/terms'"><svg class="ic "><use href="#i-doc"/></svg> View Terms &amp; Conditions</button></div></div></section>
+<div class="trust"><div class="wrap"><div><i><svg class="ic "><use href="#i-shield"/></svg></i>100% Secure<br>&amp; Reliable</div><div><i><svg class="ic "><use href="#i-bolt"/></svg></i>Fast &amp; Easy<br>Application</div><div><i><svg class="ic "><use href="#i-lock"/></svg></i>Your Data<br>is Protected</div><div><i><svg class="ic "><use href="#i-head"/></svg></i>24/7 Support</div></div></div>
+<div class="wrap grid2"><div class="card" id="about"><h2>About the IPO</h2><p>This offer gives qualified investors the opportunity to own a stake in Jaiz Bank Plc — Nigeria's leading non-interest bank, committed to ethical, Shari'ah-compliant banking for a better tomorrow.</p><br><a class="btn b-navy" href="#/terms">Know More →</a></div>
+<div class="card" id="faqs"><h2>Frequently Asked Questions</h2>
+<div class="faq"><button>Who can apply for the offer? <span>+</span></button><div>Individuals, parents/guardians applying for a minor, and registered corporate entities.</div></div>
+<div class="faq"><button>How do I make payment? <span>+</span></button><div>Securely online with Paystack — card, bank transfer or USSD.</div></div>
+<div class="faq"><button>When will I receive my shares? <span>+</span></button><div>Shares are credited electronically to your CSCS account after allotment is confirmed by the registrar.</div></div></div></div>
+<div class="wrap"><div class="how" id="how"><div><h2 class="sora">How It Works</h2><small>Follow these simple steps to subscribe</small></div>
+<div class="st"><div><div class="n">1</div><b>Fill Application</b><br><small>Verify &amp; enter details</small></div><div><div class="n">2</div><b>Review Summary</b><br><small>Accept terms</small></div><div><div class="n">3</div><b>Pay Securely</b><br><small>Via Paystack</small></div><div><div class="n">4</div><b>Get Receipt</b><br><small>Download &amp; track</small></div></div></div></div>
+</main>
+
+<main id="v-apply" class="page hidden"><div class="stepper" id="stepper"></div>
+<div class="card" id="s1"><h2>Application &amp; Shares</h2><p>Complete all sections. Fields marked <span class="req">*</span> are required.</p>
+<div class="sec" id="catS" style="margin-top:20px;border-top:0;padding-top:0"><div class="st-t">Banking relationship <span class="req">*</span></div><div class="opts" id="cats"><div class="opt" data-v="EXISTING"><span><svg class="ic "><use href="#i-bank"/></svg></span><b>Jaiz Customer</b></div><div class="opt" data-v="NON"><span><svg class="ic "><use href="#i-user"/></svg></span><b>Non-Jaiz Customer</b></div></div></div>
+<div class="sec hidden" id="verS"><div class="st-t">Identity Verification</div><div class="vbox"><b id="vT"></b>
+<div class="vrow"><input id="vId" inputmode="numeric"><input id="vDob" type="date"><button class="btn b-gold" onclick="verify()">Verify</button></div><div id="vMsg"></div></div></div>
+<div class="sec hidden" id="detS"><div class="st-t" id="detT">Your Details</div><div class="msg in" style="margin:0 0 14px">Confirm your phone and email — your receipt and status updates are sent here.</div>
+<div class="cols"><div><label class="l">Full Name</label><input id="fn" readonly></div><div><label class="l">Date of Birth</label><input id="dob" readonly></div>
+<div><label class="l">Phone Number <span class="req">*</span></label><input id="ph" type="tel" maxlength="14" placeholder="08012345678"><div class="fe" id="phE"></div></div>
+<div><label class="l">Email Address <span class="req">*</span></label><input id="em" type="email" placeholder="name@example.com"><div class="fe" id="emE"></div></div>
+<div class="span2"><label class="l">Residential / Registered Address</label><input id="ad" readonly></div></div></div>
+<div class="sec hidden" id="capS"><div class="st-t">Capital Market Details</div><label class="l">Do you have a CSCS number?</label>
+<div class="opts" id="cscsO" style="grid-template-columns:1fr 1fr"><div class="opt" data-v="yes"><b>Yes</b></div><div class="opt sel" data-v="no"><b>No</b></div></div>
+<div id="cscsBox" class="hidden" style="margin-top:14px"><label class="l">CSCS Number</label><input id="cscs" inputmode="numeric" maxlength="20" placeholder="Enter CSCS Number"><div id="cscsM"></div>
+<div class="cols" style="margin-top:12px"><div><label class="l">CHN Number</label><input id="chn" readonly></div><div><label class="l">Stockbroker</label><input id="brk" readonly></div><div><label class="l">Investor Name</label><input id="inv" readonly></div></div></div></div>
+<div class="sec hidden" id="shS"><div class="st-t">Share Purchase</div><div class="msg in" style="margin:0 0 14px">Minimum <b>100 units</b>, maximum <b>2,000,000 units</b> at <b>₦1,000.00/unit</b>. Units must be in multiples of 100.</div>
+<label class="l">Number of Units <span class="req">*</span></label><input id="qty" type="number" min="100" max="2000000" step="100" placeholder="e.g. 100"><div class="fe" id="qtyE"></div>
+<div class="calc"><div class="brk"><span>Subtotal</span><span id="sub">₦0.00</span></div><div class="brk"><span>Fees &amp; charges</span><span id="fee">₦0.00</span></div><small>Total Payable</small><b id="tot">₦0.00</b></div></div>
+<div class="sec hidden" id="divS"><div class="st-t">Dividend Account Verification <span class="req">*</span></div><div class="vbox"><p style="color:var(--soft);font-size:14px;margin-bottom:12px">Where should we pay your dividends when they're declared?</p>
+<div class="cols"><div><label class="l">Account Number <span class="req">*</span></label><input id="dA" inputmode="numeric" maxlength="10" placeholder="10-digit NUBAN"></div>
+<div><label class="l">Bank <span class="req">*</span></label><select id="dB"><option value="">— Select bank —</option></select></div></div><div id="dM"></div>
+<div id="dOk" class="hidden msg ok"><small>Verified Account Name</small><div class="sora" style="font-size:18px" id="dN"></div><div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn b-navy" style="padding:9px 20px" onclick="confirmDiv(true)">Yes, Confirm</button><button class="btn b-out" style="padding:9px 20px" onclick="confirmDiv(false)">No, Change</button></div></div></div></div>
+<div class="acts2"><span></span><button class="btn b-gold" onclick="toSummary()">Review Summary →</button></div></div>
+
+<div class="card hidden" id="s2"><h2>Application Summary</h2><p>Review every detail carefully before proceeding to payment.</p><table class="rv" id="rv" style="margin-top:14px"></table>
+<div class="sec"><div class="st-t">Declarations, Data Consent &amp; Terms</div>
+<div class="chk" onclick="this.classList.toggle('on');chkOk()"><i>✓</i><span>I confirm that the information provided is true and complete, and that I am the lawful applicant or authorised to apply.</span></div>
+<div class="chk" onclick="this.classList.toggle('on');chkOk()"><i>✓</i><span><b>I Agree &amp; Consent</b> — I have read and accept the Jaiz Bank Plc Public Offer <a href="#/terms" target="_blank" style="color:var(--blue);font-weight:700">Terms &amp; Conditions</a>, and consent to the use of my data (NDPR).</span></div></div>
+<div class="acts2"><button class="btn b-out" onclick="step(1)">← Back to Edit</button><button class="btn b-gold" id="subBtn" disabled onclick="step(3)">Proceed to Payment →</button></div></div>
+
+<div class="card pay hidden" id="s3"><h2>Complete Payment</h2><p>You'll pay through Paystack's secure checkout.</p>
+<div class="calc"><small>AMOUNT TO PAY</small><b id="pA"></b><small id="pU"></small></div>
+<div class="msg in" style="text-align:left">Payment confirms receipt of your funds only. Acceptance, allotment or refund are confirmed separately by the registrar / receiving agent.</div>
+<button class="pbtn" id="pBtn" onclick="pay()"><svg class="ic "><use href="#i-lock"/></svg> Pay with Paystack</button><p style="font-size:12px;color:var(--soft);margin-top:12px">PCI-DSS compliant • Processed by Paystack</p>
+<div class="acts2" style="justify-content:center"><button class="btn b-out" onclick="step(2)">← Back to Summary</button></div></div></main>
+
+<main id="v-terms" class="page tc hidden"><div class="card"><a href="javascript:history.back()" class="btn b-out" style="padding:8px 18px;font-size:13px">← Back</a>
+<h2 style="margin-top:18px">Jaiz Bank Plc Public Offer — Terms &amp; Conditions</h2>
+<h3>1. Data Usage Consent</h3><p>By proceeding, you consent to the collection, processing and use of your personal information for the Jaiz Bank Plc Public Offer share subscription, in accordance with the Nigeria Data Protection Regulation (NDPR) and applicable law.</p>
+<h3>2. Information Collected</h3><ul><li>Full name, date of birth, gender</li><li>Bank Verification Number (BVN)</li><li>Contact details (phone, email, address)</li><li>Bank account details (for dividend payments)</li><li>CSCS / CHN details (if applicable)</li></ul>
+<h3>3. Purpose of Data Processing</h3><ul><li>Identity verification through BVN or account validation</li><li>Processing your share application</li><li>Crediting shares to your CSCS account</li><li>Processing dividend payments</li><li>Regulatory compliance and reporting</li></ul>
+<h3>4. Offer Terms</h3><ul><li>You are 18 years or older (or applying through a parent/guardian for a minor)</li><li>Minimum subscription is 100 units, in multiples of 100, at ₦1,000.00 per unit</li><li>Allotment is at the discretion of Jaiz Bank Plc and the issuing houses</li><li>Shares are credited electronically to your CSCS account</li><li>Refunds (if any) are paid to your designated account</li></ul>
+<h3>5. Contact</h3><p>Jaiz Bank Plc — IPO Support Team · ipo@jaizbank.com</p><p style="margin-top:18px;font-size:12px">Last updated: November 2026</p></div></main>
+
+<main id="v-receipt" class="page hidden"><div class="rwrap"><div class="rcp" id="rcp"></div>
+<div class="noprint" style="text-align:center;margin-top:18px"><button class="btn b-navy" onclick="print()"><svg class="ic "><use href="#i-print"/></svg> Print / Save PDF</button> <a class="btn b-out" href="#/">Back to Home</a></div></div></main>
+
+<footer><div class="wrap"><span class="lg"><img src="images/jaiz.png" alt="Jaiz Bank"></span><span><a href="#/terms">Terms &amp; Conditions</a><a>Privacy Policy</a><a>Contact Us</a></span><span>© 2026 Jaiz Bank Plc. All rights reserved.</span></div></footer><div id="toast"></div>
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script>
+const CFG={price:1000,min:100,max:2000000,mult:100,feeFlat:0,feePct:0,paystackKey:'pk_test_7031e4607969441b8dfbdb62fe689faef0e9dd94',
+banks:['Jaiz Bank','Access Bank','GTBank','First Bank','UBA','Zenith Bank','Fidelity Bank','Stanbic IBTC','Sterling Bank','Union Bank','Wema Bank','Polaris Bank','Kuda','Opay','PalmPay']};
+const $=id=>document.getElementById(id),N=n=>'₦'+Number(n).toLocaleString('en-NG',{minimumFractionDigits:2,maximumFractionDigits:2});
+let S={type:'IND',cat:'',verified:false,divOk:false,cscs:'no',step:1,paid:null};
+const toast=m=>{const t=$('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2800)};
+const go=id=>{if(location.hash!=='#/'&&location.hash!=='')location.hash='#/';setTimeout(()=>$(id).scrollIntoView({behavior:'smooth',block:'center'}),80)};
+/* router */
+function route(){const h=location.hash.replace('#/','')||'home';['home','apply','terms','receipt'].forEach(v=>$('v-'+v).classList.toggle('hidden',v!==h));scrollTo(0,0);if(h==='receipt')receipt()}
+addEventListener('hashchange',route);
+/* faq */
+document.querySelectorAll('.faq button').forEach(b=>b.onclick=()=>b.parentElement.classList.toggle('open'));
+/* option cards */
+function pick(c,fn){$(c).querySelectorAll('.opt').forEach(o=>o.onclick=()=>{$(c).querySelectorAll('.opt').forEach(x=>x.classList.remove('sel'));o.classList.add('sel');fn(o.dataset.v)})}
+const show=(id,on=true)=>$(id).classList.toggle('hidden',!on);
+pick('cats',v=>{S.cat=v;S.verified=false;show('verS');show('detS',false);show('capS',false);show('shS',false);show('divS',false);$('vMsg').innerHTML='';
+ const e=v==='EXISTING';$('vT').textContent=e?'Verify with Account Number & Date of Birth':'Verify with BVN & Date of Birth';$('vId').placeholder=e?'10-digit Account Number':'11-digit BVN';$('vId').maxLength=e?10:11;$('vId').value=''});
+pick('cscsO',v=>{S.cscs=v;show('cscsBox',v==='yes')});
+$('vId').oninput=e=>e.target.value=e.target.value.replace(/\D/g,'');$('dA').oninput=e=>{e.target.value=e.target.value.replace(/\D/g,'');dVerify()};
+$('vDob').max=new Date().toISOString().slice(0,10);
+CFG.banks.forEach((b,i)=>$('dB').add(new Option(b,i+1)));$('dB').onchange=dVerify;
+/* verification — replace mock with your Laravel API (/api/verify/account | /api/verify/bvn) */
+function verify(){const len=S.cat==='EXISTING'?10:11,id=$('vId').value,d=$('vDob').value,m=$('vMsg');
+ if(id.length!==len||!d){m.innerHTML=`<div class="msg er">Enter a valid ${len}-digit ${S.cat==='EXISTING'?'account number':'BVN'} and date of birth.</div>`;return}
+ m.innerHTML='<div class="msg in">Verifying…</div>';
+ setTimeout(()=>{S.verified=true;S.id=id;m.innerHTML='<div class="msg ok">✓ Verified successfully. Details loaded below.</div>';
+  $('fn').value=S.type==='CORP'?'ADAMU IBRAHIM MUSA':'ADAMU IBRAHIM MUSA';$('dob').value=new Date(d).toLocaleDateString('en-GB',{day:'2-digit',month:'long',year:'numeric'});$('ad').value='12 Ahmadu Bello Way, Kaduna, Nigeria';
+  ['detS','capS','shS','divS'].forEach(x=>show(x));save()},900)}
+/* validation */
+const phOk=v=>/^(0|\+?234)[789][01]\d{8}$/.test(v.replace(/\s/g,'')),emOk=v=>/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+$('ph').oninput=()=>{const o=phOk($('ph').value);$('phE').textContent=o||!$('ph').value?'':'Enter a valid Nigerian phone number';$('ph').classList.toggle('bad',!o&&!!$('ph').value)};
+$('em').oninput=()=>{const o=emOk($('em').value);$('emE').textContent=o||!$('em').value?'':'Enter a valid email address';$('em').classList.toggle('bad',!o&&!!$('em').value)};
+$('cscs').oninput=e=>{e.target.value=e.target.value.replace(/\D/g,'');if(e.target.value.length>=6){$('chn').value='C'+e.target.value.padStart(10,'0');$('brk').value='Stanbic IBTC Stockbrokers';$('inv').value=$('fn').value;$('cscsM').innerHTML='<div class="msg ok">✓ CSCS details found</div>'}else{['chn','brk','inv'].forEach(i=>$(i).value='');$('cscsM').innerHTML=''}};
+/* shares */
+function calc(){const q=+$('qty').value||0,s=q*CFG.price,f=q?CFG.feeFlat+s*CFG.feePct/100:0;$('sub').textContent=N(s);$('fee').textContent=N(f);$('tot').textContent=N(s+f);return{q,s,f,t:s+f}}
+$('qty').oninput=()=>{const q=+$('qty').value;let e='';if(q&&(q<CFG.min))e='Minimum is '+CFG.min+' units';else if(q>CFG.max)e='Maximum is '+CFG.max.toLocaleString()+' units';else if(q&&q%CFG.mult)e='Units must be in multiples of '+CFG.mult;$('qtyE').textContent=e;calc()};
+/* dividend */
+function dVerify(){S.divOk=false;show('dOk',false);const a=$('dA').value,m=$('dM');if(a.length===10&&$('dB').value){m.innerHTML='<div class="msg in">Resolving account…</div>';clearTimeout(S.dt);S.dt=setTimeout(()=>{$('dN').textContent='ADAMU IBRAHIM MUSA';m.innerHTML='';show('dOk')},800)}else m.innerHTML=''}
+function confirmDiv(y){if(y){S.divOk=true;$('dM').innerHTML='<div class="msg ok">✓ Account confirmed. Dividends will be paid here.</div>';show('dOk',false)}else{$('dA').value='';$('dB').value='';S.divOk=false;show('dOk',false);$('dM').innerHTML=''}}
+/* stepper / steps */
+function step(n){S.step=n;[1,2,3].forEach(i=>show('s'+i,i===n));scrollTo(0,0);
+ $('stepper').innerHTML=['Application','Summary','Payment'].map((t,i)=>`<div class="stp ${i+1===n?'on':i+1<n?'done':''}"><b>${i+1<n?'✓':i+1}</b>${t}</div>`).join('<div class="line"></div>');}
+function bad(m,id){toast(m);if(id){$(id).focus();$(id).scrollIntoView({block:'center',behavior:'smooth'})}return false}
+function toSummary(){
+ if(!S.cat)return bad('Select your banking relationship');if(!S.verified)return bad('Please verify your identity first');
+ if(!phOk($('ph').value))return bad('Enter a valid phone number','ph');if(!emOk($('em').value))return bad('Enter a valid email','em');
+
+
+ if(S.cscs==='yes'&&!$('chn').value)return bad('Enter a valid CSCS number','cscs');
+ const q=+$('qty').value;if(!q||q<CFG.min||q>CFG.max||q%CFG.mult)return bad('Enter a valid number of units (multiples of 100)','qty');
+ if(!S.divOk)return bad('Verify and confirm your dividend account','dA');
+ const c=calc(),bn=$('dB').selectedOptions[0].text;
+ S.ref='JZIPO'+Date.now().toString().slice(-9);S.q=c.q;S.total=c.t;
+ const R=[['Banking Relationship',S.cat==='EXISTING'?'Jaiz Customer':'Non-Jaiz Customer'],['Full Name',$('fn').value],['Phone',$('ph').value],['Email',$('em').value],['Date of Birth',$('dob').value],['Address',$('ad').value]];
+ R.push(['CSCS Number',S.cscs==='yes'?$('cscs').value:'None'],['CHN Number',$('chn').value||'—'],['Stockbroker',$('brk').value||'—'],['Dividend Account',$('dA').value+' • '+bn],['Dividend Account Name',$('dN').textContent],['Units Applied',c.q.toLocaleString()],['Unit Price',N(CFG.price)],['Subtotal',N(c.s)],['Fees & Charges',N(c.f)]);
+ S.R=R;S.bank=bn;$('rv').innerHTML=R.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join('')+`<tr class="tot"><td>Total Payable</td><td>${N(c.t)}</td></tr>`;
+ document.querySelectorAll('.chk').forEach(x=>x.classList.remove('on'));chkOk();step(2)}
+const chkOk=()=>$('subBtn').disabled=document.querySelectorAll('.chk.on').length<2;
+/* Paystack */
+function pay(){$('pA').textContent=N(S.total);}
+const _step=step;step=n=>{_step(n);if(n===3){$('pA').textContent=N(S.total);$('pU').textContent=S.q.toLocaleString()+' units • Ref '+S.ref}};
+function paid(ref){S.paid={ref:S.ref,txn:ref,date:new Date().toLocaleString('en-GB')};try{sessionStorage.removeItem('jz')}catch(e){}location.hash='#/receipt'}
+$('pBtn').onclick=()=>{const key=CFG.paystackKey;
+ if(typeof PaystackPop==='undefined'||key.includes('REPLACE')){ // demo mode until a real public key is set
+  if(confirm('DEMO MODE: no Paystack public key set.\nSimulate a successful payment?'))paid('DEMO'+Date.now());return}
+ PaystackPop.setup({key,email:$('em').value,amount:Math.round(S.total*100),currency:'NGN',ref:S.ref,
+  metadata:{custom_fields:[{display_name:'Applicant',variable_name:'applicant',value:$('fn').value},{display_name:'Units',variable_name:'units',value:S.q}]},
+  callback:r=>paid(r.reference), // TODO: verify on server via your PaymentController before showing receipt
+  onClose:()=>toast('Payment window closed')}).openIframe()};
+/* receipt */
+function receipt(){const c=$('rcp');if(!S.paid){c.innerHTML='<p style="text-align:center;padding:40px">No payment found. <a href="#/apply" style="color:var(--blue);font-weight:700">Start an application</a></p>';return}
+ const g=k=>(S.R.find(r=>r[0]===k)||[,'—'])[1],row=(a,b)=>`<div class="rr"><span>${a}</span><b>${b}</b></div>`;
+ c.innerHTML=`<div class="rtop"><img src="images/jaiz.png" alt="Jaiz Bank"><div class="rt"><b>PAYMENT RECEIPT</b><small>Jaiz Bank Plc Public Offer</small><small>Ref: ${S.paid.ref}</small></div></div>
+ <div class="rband"><div><small>Total Paid</small><b>${N(S.total)}</b></div><span class="badge">${'<svg class="ic"><use href="#i-check"/></svg>'} Payment Received</span></div>
+ <div class="rg"><h4>Application</h4>${row('Applicant',g('Full Name'))}${row('Customer Category',g('Banking Relationship'))}${row('Email',g('Email'))}${row('Phone',g('Phone'))}${row('Date of Birth',g('Date of Birth'))}${row('Payment Date',S.paid.date)}
+ <h4>Share Details</h4>${row('Units Applied',g('Units Applied'))}${row('Unit Price',N(CFG.price))}${row('Subtotal',g('Subtotal'))}${row('Fees &amp; Charges',g('Fees & Charges'))}
+ <h4>Dividend Account</h4>${row('Account / Bank',g('Dividend Account'))}${row('Account Name',g('Dividend Account Name'))}
+ <h4>Capital Market</h4>${row('CSCS Number',g('CSCS Number'))}${row('CHN Number',g('CHN Number'))}${row('Stockbroker',g('Stockbroker'))}${row('Paystack Txn',S.paid.txn)}</div>
+ <div class="rnote">This receipt confirms payment only. Acceptance and allotment are confirmed separately by the registrar / receiving agent.</div>
+ <div class="rfoot"><div><b>Jaiz Bank Plc</b> — With you for life<br>ipo@jaizbank.com</div><div style="text-align:right">Thank you for investing with Jaiz Bank Plc<br>Computer-generated receipt</div></div>`}
+/* resume */
+function save(){try{sessionStorage.setItem('jz',JSON.stringify({t:S.type}))}catch(e){}}
+function resume(){location.hash='#/apply';toast('Pick up where you left off')}
+step(1);route();
+</script>
+</body></html>
